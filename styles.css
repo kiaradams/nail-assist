@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #d63384;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #d63384;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe066;
+}
+
+header {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f8d7e8;
+}
+
+section {
+    padding: 2rem;
+}
+<section class="services">
+    <div class="card">
+        <h3>Manicures</h3>
+        <p>Professional manicure treatments.</p>
+    </div>
+
+    <div class="card">
+        <h3>Pedicures</h3>
+        <p>Relaxing and luxurious pedicure services.</p>
+    </div>
+
+    <div class="card">
+        <h3>Nail Art</h3>
+        <p>Creative and custom nail designs.</p>
+    </div>
+</section>
+.services {
+    display: flex;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    flex: 1;
+}
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
